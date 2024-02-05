@@ -33,7 +33,7 @@ interface GameRenderer {
 }
 
 // Implementación de la lógica del juego (Tamaño de pantalla, velocidad de la serpiente, partes del cuerpo, aparición aleatoria de la manzana)
-  class SnakeGameLogic implements GameLogic {
+public class SnakeGameLogic implements GameLogic {
     static final int SCREEN_WIDTH = 600;
     static final int SCREEN_HEIGHT = 600;
     static final int UNIT_SIZE = 25;
@@ -240,7 +240,7 @@ class SnakeGameRenderer implements GameRenderer {
 }
 
 // Panel de juego
-public class GamePanel extends JPanel {
+ class GamePanel extends JPanel {
     private final GameLogic gameLogic;
     private final GameRenderer gameRenderer;
 
